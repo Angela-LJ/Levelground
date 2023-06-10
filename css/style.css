@@ -1,0 +1,319 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html, body {
+  height: 100%;
+}
+
+
+/******************************************
+/* HEADER LAYOUT
+/*******************************************/
+header {
+  position: relative;
+  background-color: rgb(115, 130, 137);
+  height: 50px;
+}
+
+header ul {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header ul li {
+  float: left;
+  margin-top: 20px;
+}
+
+.classes {
+  margin-left: 300px;
+}
+
+.hire {
+  margin-right: 40;
+  margin-left: 40px;
+}
+
+.logo {
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 1150px;
+
+}
+
+.donate {
+  position: absolute;
+  padding:0;
+  margin: 20px;
+  margin-left: 700px;
+  float: right;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/******************************************
+/* SECTIONS LAYOUT
+/*******************************************/
+
+section h1 {
+  font-size: 6vh;
+  font-weight: bold;
+}
+
+.sectionOne {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background-color: rgb(115, 130, 137);
+  color: white;
+
+}
+
+.sectionOne p {
+  font-size: 2vh;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  line-height: 3vh;
+}
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+
+.videoContainer img, .videoContainer span {
+  position: absolute;
+
+}
+
+.videoContainer img {
+  height: 40px;
+  margin-left: -130px;
+  margin-top: -10px;
+  padding: 0;
+  float: left;
+}
+
+.videoContainer span {
+  text-decoration: none;
+  color: white;
+  margin-left:-80px;
+  font-size: 1.8vh;
+  text-decoration: none;
+}
+.videoContainer span a {
+  text-decoration: none;
+  color: white;
+}
+
+/*********Section Two***************/
+
+.sectionTwo {
+  background-color:rgb(244, 243, 241);
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.sectionTwo h2 {
+  font-size: 3vh;
+}
+
+.sectionTwo p {
+  font-size: 1.6vh;
+  line-height: 2vh;
+  margin-top: 20px;
+}
+
+/*********Section Three***************/
+
+.sectionThree {
+  background-color: rgb(219, 223, 226);
+  display: block;
+  float: left;
+  padding: 100px 300px 100px 300px;
+
+}
+
+
+.leftSide {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 50%;
+  margin-left: -5%;
+}
+
+.leftSide img {
+  height: 600px;
+  padding-left: -1%;
+}
+
+.rightSide img {
+  height: 600px;
+  padding-left: 1%;
+
+}
+
+.rightSide  {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 50%;
+  /* padding-left: 50px; */
+  margin-left: 5%;
+
+}
+
+.sectionThree h4{
+  font-size: 2vh;
+  padding: 10px;
+
+}
+
+
+.sectionThree a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 0;
+  display: block;
+  margin-top: 4%;
+  font-size: 1.5vh;
+  border: 1px black solid;
+}
+
+.sectionThree .leftSide a, .sectionThree .rightSide a {
+  color: black;
+  font-weight: bold;
+}
+
+.sectionFour {
+  text-align: center;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: block;
+  float: left;
+}
+
+.sectionFour h2 {
+  font-size: 2vh;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sectionFour p {
+  font-size: 1.5vh;
+  padding-bottom: 50px;
+}
+
+.sectionFour a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: black 1px solid;
+  padding: 10px;
+}
+
+
+
+/******************************************
+/* FOOTER LAYOUT
+/*******************************************/
+
+/* footer {
+
+
+} */
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 2150px) {
+  .logo {
+    margin-left: 1000px
+  }
+}
+
+
+@media screen and (max-width: 1950px) {
+  .logo {
+    margin-left: 900px
+  }
+}
+
+
+@media screen and (max-width: 1750px) {
+  .logo {
+    margin-left: 800px
+  }
+  .donate {
+    margin-left: 600px
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .logo {
+    margin-left: 700px
+  }
+  .donate {
+    margin-left: 500px
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .logo {
+    margin-left: 600px
+  }
+  .donate {
+    margin-left: 400px
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .logo {
+    margin-left: 510px
+  }
+  .donate {
+    margin-left: 50px
+  }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    margin-left: -1px;
+    padding-left: 20px;
+  }
+
+}
